@@ -7,6 +7,7 @@ import ButtonsContainer from "./components/ButtonContainer";
 import RestartButton from "./components/RestartButton";
 import Ladder from "./components/Ladder";
 import LadderBase from "./components/LadderBase";
+import StartButton from "./components/StartButton";
 
 export default function App() {
   const [buttonState, setButtonState] = useState(true);
@@ -18,6 +19,7 @@ export default function App() {
   const [moveUpSignal, setMoveUpSignal] = useState(0); // Signal to move the person up
   const [fallSignal, setFallSignal] = useState(0); // Signal to make the person fall
   const [showLogo, setShowLogo] = useState(false); // Signal to make the person fall
+  const [start, setStart] = useState(true);
 
   const logic = [
     {
@@ -134,14 +136,6 @@ export default function App() {
     }
   };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      playAudio();
-    }, 2000); // Delay of 2000ms (2 seconds)
-
-    return () => clearTimeout(timer); // Cleanup the timeout when the component unmounts
-  }, []);
-
   const handleButtonClick = (nextStage) => {
     if (audioRef.current) {
       audioRef.current.pause(); // Pause the current audio
@@ -172,7 +166,7 @@ export default function App() {
       <BackgroundAudio />
       <BackgroundVideo />
       <RotatingBackground />
-      {buttonState && (
+      {buttonState && !start && (
         <ButtonsContainer
           onLeftClick={() => {
             handleButtonClick(logic[currentStage].left); // Navigate to the left stage
@@ -192,6 +186,21 @@ export default function App() {
           }}
           onRightClick={() => {
             window.location.reload(); // Navigate to the right stage
+          }}
+        />
+      )}
+
+      {start && (
+        <StartButton
+          onLeftClick={() => {
+            setCurrentStage(0);
+            setStart(false);
+            playAudio(0);
+          }}
+          onRightClick={() => {
+            setCurrentStage(0);
+            setStart(false);
+            playAudio(0);
           }}
         />
       )}
