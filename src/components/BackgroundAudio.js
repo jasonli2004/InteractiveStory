@@ -1,21 +1,18 @@
 import React, { useRef, useEffect } from "react";
 
-const BackgroundAudio = () => {
+const BackgroundAudio = ({ playSignal }) => {
   const backgroundAudioRef = useRef(null); // Reference for background audio
 
   useEffect(() => {
-    if (backgroundAudioRef.current) {
-      backgroundAudioRef.current.volume = 0.7; // Set the volume to 90% (0.9)
+    if (playSignal && backgroundAudioRef.current) {
+      backgroundAudioRef.current.play().catch((error) => {
+        console.error("Error playing background audio:", error);
+      });
     }
-  }, []); // Run this effect once on mount
+  }, [playSignal]); // Trigger when playSignal changes
 
   return (
-    <audio
-      ref={backgroundAudioRef}
-      src="/assets/audio/music.mp3"
-      loop
-      autoPlay
-    ></audio>
+    <audio ref={backgroundAudioRef} src="/assets/audio/music.mp3" loop></audio>
   );
 };
 

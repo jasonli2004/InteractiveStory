@@ -20,6 +20,7 @@ export default function App() {
   const [fallSignal, setFallSignal] = useState(0); // Signal to make the person fall
   const [showLogo, setShowLogo] = useState(false); // Signal to make the person fall
   const [start, setStart] = useState(true);
+  const [playSignal, setPlaySignal] = useState(0);
 
   const logic = [
     {
@@ -163,7 +164,7 @@ export default function App() {
       {!showLogo && (
         <Ladder moveUpSignal={moveUpSignal} fallSignal={fallSignal} />
       )}
-      <BackgroundAudio />
+      <BackgroundAudio playSignal={playSignal} />
       <BackgroundVideo />
       <RotatingBackground />
       {buttonState && !start && (
@@ -195,11 +196,13 @@ export default function App() {
           onLeftClick={() => {
             setCurrentStage(0);
             setStart(false);
+            setPlaySignal((prev) => prev + 1);
             playAudio(0);
           }}
           onRightClick={() => {
             setCurrentStage(0);
             setStart(false);
+            setPlaySignal((prev) => prev + 1);
             playAudio(0);
           }}
         />
