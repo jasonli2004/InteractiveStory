@@ -1,0 +1,57 @@
+.ladder {
+  position: fixed;
+  right: 10px; /* Align the ladder to the rightmost side */
+  top: 10%; /* Add some space from the top */
+  width: 80px; /* Adjust width for vertical bars */
+  height: 80%; /* Ladder height relative to the screen */
+  display: flex;
+  justify-content: space-between; /* Space out vertical bars */
+  align-items: center;
+  background-color: transparent; /* No background color */
+}
+
+.vertical-bar {
+  width: 10px; /* Width of the vertical bars */
+  height: 100%; /* Match the height of the ladder */
+  background-color: #d2a679; /* Lighter brown color for vertical bars */
+  border-radius: 5px; /* Slight rounding for a polished look */
+}
+
+.steps-container {
+  position: relative; /* Enable absolute positioning for the person */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Even spacing for the rungs */
+  align-items: center;
+  width: 60%; /* Space between the vertical bars */
+  height: 100%;
+}
+
+.ladder-rung {
+  width: 90%; /* Width of each rung relative to the container */
+  height: 8%; /* Match the rung height in percentage */
+  background-color: #d2a679; /* Lighter brown color for rungs */
+  border-radius: 4px; /* Slight rounding for aesthetic */
+}
+
+.person {
+  position: absolute;
+  bottom: 0; /* Start at the bottom */
+  left: 50%; /* Center horizontally */
+  width: 40px; /* Size of the person image */
+  height: auto;
+  transform: translateX(-50%) translateY(0); /* Default position */
+  transition: bottom 0.5s ease, transform 1s ease, opacity 2s ease; /* Smooth climb and fade out */
+}
+
+.person.rotating {
+  transform: translateX(-50%) rotate(90deg); /* Rotate in place */
+  transition: transform 1s ease; /* Smooth rotation */
+}
+
+.person.falling {
+  transform: translateX(-50%) rotate(90deg); /* Keep rotated while falling */
+  bottom: -150px; /* Fall to the bottom of the screen */
+  opacity: 0; /* Gradually fade out */
+  transition: bottom 2s ease, opacity 2s ease; /* Smooth fall and fade out */
+}

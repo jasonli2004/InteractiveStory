@@ -1,0 +1,18 @@
+.background-video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  overflow: hidden; /* Ensure anything outside the container is hidden */
+}
+
+.background-video {
+  position: absolute;
+  top: -5%; /* Move the video slightly upwards */
+  left: -5%; /* Move the video slightly leftwards */
+  width: 110%; /* Increase the width to push the edges out of view */
+  height: 110%; /* Increase the height to push the edges out of view */
+  pointer-events: none; /* Prevent user interaction with the video */
+}

@@ -1,0 +1,15 @@
+.rotating-background-container {
+  position: fixed;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  z-index: -1; /* Keep it in the background */
+}
+
+.rotating-image {
+  opacity: 0.96;
+  width: 68vmin; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+}

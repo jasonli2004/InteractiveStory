@@ -1,0 +1,15 @@
+.ladder-base {
+  position: fixed;
+  right: 10px; /* Align the ladder to the rightmost side */
+  top: 10%; /* Add some space from the top */
+  width: 80px; /* Adjust width for vertical bars */
+  display: flex;
+  justify-content: space-between; /* Space out vertical bars */
+  align-items: center;
+  background-color: transparent; /* No background color */
+}
+
+.base-icon {
+  width: 100%; /* Make the image fit the container */
+  height: auto;
+}

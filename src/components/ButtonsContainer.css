@@ -1,0 +1,28 @@
+.button-container {
+  display: flex; /* Enable flexbox */
+  justify-content: space-between; /* Push buttons to edges of the container */
+  align-items: center; /* Vertically center buttons */
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto; /* Center container horizontally */
+  height: 100vh; /* Full viewport height for vertical alignment */
+}
+
+.left-button,
+.right-button {
+  padding: 12px 24px; /* Adjust size for comfort */
+  border: none;
+  border-radius: 25px; /* Rounded edges for a soft look */
+  font-size: 18px; /* Slightly larger for readability */
+  font-weight: bold;
+  background: linear-gradient(135deg, #d17a47, #a8572c); /* Warm gradient */
+  color: #fffaf0; /* Cream text for contrast */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.left-button:hover,
+.right-button:hover {
+  background: linear-gradient(135deg, #e08955, #b56438); /* Brighter gradient */
+  transform: scale(1.05); /* Slight lift on hover */
+}
