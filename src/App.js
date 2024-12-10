@@ -10,7 +10,7 @@ import LadderBase from "./components/LadderBase";
 import StartButton from "./components/StartButton";
 
 export default function App() {
-  const [buttonState, setButtonState] = useState(true);
+  const [buttonState, setButtonState] = useState(false);
   const [restartButton, setRestartButton] = useState(false);
 
   const [audioSrc, setAudioSrc] = useState("/assets/audio/p0.mp3");
