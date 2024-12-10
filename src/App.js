@@ -145,7 +145,7 @@ export default function App() {
 
     setMoveUpSignal((prev) => prev + 1); // Increment the signal to trigger movement
 
-    setButtonState(true);
+    setButtonState(false);
     setRestartButton(false); // Hide buttons while audio is playing
     setCurrentStage(nextStage); // Update the current stage
     const newAudioSrc = `/assets/audio/p${nextStage}.mp3`; // Generate new audio source
