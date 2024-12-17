@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Interactive Story Web Page 🌟
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project offers an engaging and interactive life story experience where users can make choices that lead to diverging life paths and outcomes. Designed as a personal project, it was showcased during the final closing ceremony of my study abroad program. The project was rapidly developed over two days and is a proof of concept rather than a fully refined web application.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🖥️ Live Demo
+Visit the live interactive story here:  
+[Interactive Story Web Page](https://interactive-story-git-main-jasonli2004s-projects.vercel.app)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📚 Project Overview
+- **Concept**: A narrative-driven web page where the user progresses through life by making decisions at key points, influencing their life story.
+- **Technology**: Built using **React** and hosted on **Vercel**.
+- **Duration**: Developed over 2 days as a showcase project.
+- **Story**: The complete narrative explores different stages of life and the consequences of choices.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📂 Repository
+You can explore the source code on GitHub:  
+[GitHub Repository](https://github.com/jasonli2004/InteractiveStory)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📝 Story Content
+The interactive story is titled **"One Life (Egyetlen Élet)"**. Users navigate through stages of life, making decisions that lead to alternate outcomes, including:
+- Childhood memories
+- Educational choices
+- Career paths
+- Relationships and personal growth
+- Life's conclusion
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Features
+- **Dynamic User Choices**: Users make choices that impact their progression and ending.
+- **React Integration**: Designed using React components for interactivity.
+- **Multi-Path Narratives**: Multiple story paths lead to different endings, ensuring replayability.
+- **Fast Deployment**: Rapidly developed and deployed using Vercel.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🔧 Technologies Used
+- **Frontend**: React.js
+- **Deployment**: Vercel
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎯 Future Improvements
+This project is a prototype and can be improved in the following ways:
+- Enhanced UI/UX for better aesthetics and accessibility.
+- Integration of animations and transitions for smoother storytelling.
+- Refinement of web development best practices.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🤝 Acknowledgments
+- **Story Inspiration**: Created as part of my study abroad experience.
+- **Audience**: Presented during the program's closing ceremony.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📧 Contact
+If you'd like to provide feedback or comment, feel free to contact me:  
+**Xiaojia Li**  
+- Email: [lil4@carleton.edu](lil4@carleton.edu)  
+- GitHub: [jasonli2004](https://github.com/jasonli2004)  
+- Website: [Portfolio Link](https://github.com/jasonli2004/Xiaojia_Li)
